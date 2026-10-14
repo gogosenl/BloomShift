@@ -1,0 +1,50 @@
+{
+  "name": "bloomshift-mobile",
+  "version": "1.0.9",
+  "description": "A production mobile color puzzle built with React Native and Expo.",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gogosenl/bloomshift-mobile.git"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "audio:generate": "node scripts/generate-audio.js",
+    "typecheck": "tsc --noEmit",
+    "doctor": "npx expo-doctor",
+    "build:preview": "npx eas-cli@latest build --platform android --profile preview",
+    "build:production": "npx eas-cli@latest build --platform android --profile production",
+    "build:ios:preview": "npx eas-cli@latest build --platform ios --profile preview",
+    "build:ios:simulator": "npx eas-cli@latest build --platform ios --profile ios-simulator",
+    "build:ios:production": "npx eas-cli@latest build --platform ios --profile production",
+    "submit:android": "npx eas-cli@latest submit --platform android --profile production",
+    "submit:ios": "npx eas-cli@latest submit --platform ios --profile production"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "expo": "~54.0.37",
+    "expo-asset": "~12.0.13",
+    "expo-audio": "~1.1.1",
+    "expo-dev-client": "~6.0.21",
+    "expo-haptics": "~15.0.8",
+    "expo-iap": "^5.6.2",
+    "expo-splash-screen": "~31.0.13",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-google-mobile-ads": "15.7.0",
+    "react-native-safe-area-context": "~5.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  },
+  "overrides": {
+    "postcss": "^8.5.14"
+  }
+}

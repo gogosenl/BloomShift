@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "Bloomshift",
+    "slug": "dalga-bahcesi-mobile",
+    "owner": "gorkemsenol2",
+    "description": "Rotate colorful flowers, solve relaxing puzzles, and bring gardens to life.",
+    "version": "1.0.9",
+    "orientation": "portrait",
+    "icon": "./assets/images/app-icon-bloomshift-v2.png",
+    "scheme": "dalgabahcesi",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gorsengames.dalgabahcesi",
+      "buildNumber": "14",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.gorsengames.dalgabahcesi",
+      "versionCode": 13,
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#0D3C26",
+        "foregroundImage": "./assets/images/app-icon-bloomshift-v2.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/favicon-garden-v2.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/app-icon-bloomshift-v2.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0D3C26",
+          "imageWidth": 220
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": false,
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-2671380652899301~5593757932",
+          "iosAppId": "ca-app-pub-2671380652899301~3662455516",
+          "delayAppMeasurementInit": true,
+          "optimizeInitialization": true,
+          "optimizeAdLoading": true
+        }
+      ],
+      "expo-iap",
+      "expo-asset"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "129b62fa-f121-4d4d-9628-ef77aab3fcff"
+      }
+    }
+  }
+}
